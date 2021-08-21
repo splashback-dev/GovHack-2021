@@ -14,6 +14,8 @@
     "@types/react-router-dom": "^5.1.8",
     "antd": "^4.16.12",
     "leaflet": "^1.7.1",
+    "leaflet-webgl-heatmap": "^0.2.7",
+    "leaflet.heat": "^0.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-leaflet": "^3.2.1",
