@@ -24,3 +24,7 @@ code {
 .ant-menu-horizontal li {
   @apply flex items-center !important;
 }
+
+.leaflet-container {
+  @apply h-full !important;
+}

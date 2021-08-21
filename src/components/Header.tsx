@@ -1,5 +1,5 @@
 import React from 'react';
-import {Menu} from 'antd';
+import {Menu, Typography} from 'antd';
 import {Link, useLocation} from 'react-router-dom';
 
 export const Header: React.FC<any> = () => {
@@ -7,8 +7,9 @@ export const Header: React.FC<any> = () => {
 
     return (
         <div className="w-full h-full flex bg-blue-dark">
-            <div className="mx-8 h-full">
-                <img className="h-full w-auto" src="favicon.ico"/>
+            <div className="h-full mx-8 flex items-center text-white space-x-4">
+                <img className="h-full w-auto" alt="sir frogly" src="favicon.ico"/>
+                <Typography.Title className="text-white font-serif m-0">THE FROG RETURNS</Typography.Title>
             </div>
             <Menu className="h-full" mode="horizontal" theme="dark" selectedKeys={[pathname]}>
                 <Menu.Item key="/">
