@@ -2,7 +2,7 @@ import {TileLayer, useMap, useMapEvents} from 'react-leaflet';
 import {LatLng} from 'leaflet';
 
 export interface MapProps {
-    onMoveEnd: (position: LatLng) => void
+    onMoveEnd: (position: LatLng, zoomLevel: number) => void
 }
 
 export const Map: React.FC<MapProps> = ({onMoveEnd}) => {
@@ -16,7 +16,7 @@ export const Map: React.FC<MapProps> = ({onMoveEnd}) => {
             console.log(e.latlng);
         },
         moveend(e) {
-            onMoveEnd(map.getCenter());
+            onMoveEnd(map.getCenter(), map.getZoom());
         }
     });
 
