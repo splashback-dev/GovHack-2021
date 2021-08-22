@@ -62,7 +62,6 @@ export const Map: React.FC<MapProps> = ({onMoveEnd}) => {
 
     useMapEvents({
         click(e) {
-            const health = Math.floor(Math.random() * 100);
             const healthPointRaw: [number, number, number] = getClosestPoint(e.latlng);
             const healthPoint = new LatLng(...healthPointRaw);
             setHealthMarkers([...healthMarkers, (
