@@ -3,8 +3,8 @@ import {MapContainer} from 'react-leaflet';
 import {Map} from '../components/Map';
 import {LatLng, LatLngTuple} from 'leaflet';
 
-const defaultPosition: LatLngTuple = [-33.865143, 151.209900];
-const defaultZoomLevel: number = 13;
+const defaultPosition: LatLngTuple = [-33.90817776739702, 151.10698699951175];
+const defaultZoomLevel: number = 12;
 
 export const Home: React.FC<any> = () => {
     const [initialPosition, setInitialPosition] = useState(defaultPosition);
