@@ -1,4 +1,4 @@
-import React, {useMemo, useRef, useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {LatLng} from 'leaflet';
 import {Marker, Popup} from 'react-leaflet';
 import {Progress} from 'antd';
@@ -24,7 +24,7 @@ function getHealthColor(health: number, healthBound: number = 20): string {
 }
 
 export const HealthMarker: React.FC<HealthMarkerProps> = ({initialPosition, pointHealth}) => {
-    const [position, setPosition] = useState(initialPosition);
+    const [position] = useState(initialPosition);
     const markerRef = useRef<any>(null);
 
     const friendlyPosition = `(${position.lat.toFixed(3)}, ${position.lng.toFixed(3)})`;

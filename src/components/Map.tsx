@@ -23,7 +23,7 @@ export const Map: React.FC<MapProps> = ({onMoveEnd}) => {
             L.heatLayer(healthPoints, {radius: 100, max: 100, blur: 20}).addTo(map);
         }
         map.scrollWheelZoom.enable();
-    });
+    }, [firstLoad, map]);
 
     useMapEvents({
         click(e) {
