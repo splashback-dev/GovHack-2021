@@ -9,17 +9,17 @@ export const Header: React.FC<any> = () => {
         <div className="w-full h-full flex bg-blue-dark">
             <div className="h-full mx-8 flex items-center text-white space-x-4">
                 <img className="h-full w-auto" alt="sir frogly" src="favicon.ico"/>
-                <Typography.Title className="text-white font-serif m-0">THE FROG RETURNS</Typography.Title>
+                <Typography.Title className="text-white font-serif m-0">Frogly</Typography.Title>
             </div>
             <Menu className="h-full" mode="horizontal" theme="dark" selectedKeys={[pathname]}>
                 <Menu.Item key="/">
                     <Link to="/">
-                        Home
+                        Environmental Quality
                     </Link>
                 </Menu.Item>
                 <Menu.Item key="/about">
                     <Link to="/about">
-                        About
+                        Planning
                     </Link>
                 </Menu.Item>
             </Menu>
